@@ -9,6 +9,7 @@
         Upload Image
       </label>
       <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    <div>
     </form>
     <div class="image-section" style="display:none;">
       <div class="img-preview">
@@ -25,6 +26,21 @@
       <span> </span>
     </h3>
   </div>
+  <form  method="post" action="{{url_for('go')}}" >
+  <h6>
+<br><br>
+    <label for="select"><i>SELECT MEDIA:</i></label>
 
+  <select id="select" name="x">
+    <option value="Movies">Movies</option>
+    <option value="Songs">Songs</option>
+    <option value="Books">Books</option>
+  </select>
+
+  <br><br>
+    </h6>
+    <input type="submit"  class="btn btn-primary" value="recommend">
+  </form>
+</div>
 </center><br><br>
 {% endblock %}

@@ -1,0 +1,165 @@
+{% extends "import.html" %}
+{% block content %}
+
+	  <br><br>
+	 {% if data[1]=="Sad" and  data[0]=="Movies" %}
+ <h3 id="Sad">--Sad--</h3><br>
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt0168629/?ref_=ttls_li_tt">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt1255953/?ref_=ttls_li_tt">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0364569/?ref_=ttls_li_tt">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0120338/?ref_=ttls_li_tt">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0111579/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Sad" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice">--link1</a></h5>
+<h5> <a href="https://www.goodreads.com/book/show/7785207-the-mating">--link2</a></h5>
+<h5> <a href="https://www.goodreads.com/book/show/112750.Darkfever">--link3</a></h5>
+<h5> <a href="https://www.goodreads.com/book/show/10183211-damian-s-oracle">--link4</a></h5>
+<h5> <a href="https://www.goodreads.com/book/show/10475907-til-death">--link5</a></h5><br>
+{% elif data[1]=="Sad" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/JF8BRvqGCNs">--link1</a></h5>
+<h5> <a href="https://youtu.be/-2U0Ivkn2Ds">--link2</a></h5>
+<h5> <a href="https://youtu.be/A_af256mnTE">--link3</a></h5>
+<h5> <a href="https://youtu.be/Vf8e3OozHlI">--link4</a></h5>
+<h5> <a href="https://youtu.be/5TGULdbFzyc">--link5</a></h5><br><br>
+{% elif data[1]=="Happy" and  data[0]=="Movies" %}
+ <h3 id="Happy">--Happy--</h3><br>
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt0047437/?ref_=ttls_li_tt">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0058331/?ref_=ttls_li_tt">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0059742/?ref_=ttls_li_tt">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0046250/?ref_=ttls_li_tt">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0328589/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Happy" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.amazon.in/Designed-Destined-Greatness-Practical-successful-ebook/dp/B08SJ5CXSF">--link1</a></h5>
+<h5> <a href="https://www.amazon.in/MANY-HAPPY-ACCIDENT-Recollections-Life-ebook/dp/B08RMWJ334">--link2</a></h5>
+<h5> <a href="https://www.amazon.in/Recipe-Be-Happy-Meeti-Sheth-ebook/dp/B08HQSF6HD">--link3</a></h5>
+<h5> <a href="https://www.amazon.in/Source-Power-Happy-Thoughts-ebook/dp/B0092FW4NK">--link4</a></h5>
+<h5> <a href="http://www.gutenberg.org/ebooks/902">--link5</a></h5><br>
+{% elif data[1]=="Happy" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/bixuI_GV5I0">--link1</a></h5>
+<h5> <a href="https://youtu.be/JC9FA8lZRy8">--link2</a></h5>
+<h5> <a href="https://youtu.be/lyIhRNPCNiw">--link3</a></h5>
+<h5> <a href="https://youtu.be/ru0K8uYEZWw">--link4</a></h5>
+<h5> <a href="https://youtu.be/AgFeZr5ptV8">--link5</a></h5><br><br>
+{% elif data[1]=="Angry" and  data[0]=="Movies" %}
+ <h3 id="Anger">--Angry--</h3><br>     
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt1985949/">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt1700415/">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt6095472/">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt1502404/">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt3368222/">--link5</a></h5><br>
+{% elif data[1]=="Angry" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.bookrix.com/_ebook-doug-robbins-the-ghost-of-angry-jack/">--link1</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-ben-lev-angry-alyssa/">--link2</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-bluetiger-the-angry-shaking-ground/">--link3</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-kayla-stiles-shadows-of-the-past/">--link4</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-miss-awesome-smiley-faces/">--link5</a></h5><br>
+{% elif data[1]=="Angry" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/FYMObdOqcRg">--link1</a></h5>
+<h5> <a href="https://youtu.be/NH-9Pow-2oE">--link2</a></h5>
+<h5> <a href="https://youtu.be/fm7SNHUBVdA">--link3</a></h5>
+<h5> <a href="https://youtu.be/cH_rfGBwamc">--link4</a></h5>
+<h5> <a href="https://youtu.be/9SYUveBAfCU">--link5</a></h5><br><br>
+
+{% elif data[1]=="Disgust" and  data[0]=="Movies" %}
+<h3 id="Disgust">--Disgust--</h3>  <br>
+ <h5>MOVIES</h5>
+<h5> <a href="https://m.imdb.com/title/tt2096673/">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt4193394/">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0283246/">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt4675030/">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt3235888/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Disgust" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://press.princeton.edu/books/paperback/9780691126258/hiding-from-humanity">--link1</a></h5>
+<h5> <a href="https://www.taylorfrancis.com/books/mono/10.4324/9780203780558/disgust-susan-miller">--link2</a></h5>
+<h5> <a href="https://www.taylorfrancis.com/books/mono/10.4324/9780429201158/politics-disgust-eleonora-joensuu">--link3</a></h5>
+<h5> <a href="https://www.springer.com/gp/book/9783319198989">--link4</a></h5>
+<h5> <a href="https://understandingautoimmune.com/episodes/power-of-disgust/">--link5</a></h5><br>
+{% elif data[1]=="Disgust" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/BaUlReHzSOw">--link1</a></h5>
+<h5> <a href="https://youtu.be/fk_aksEz_aQ">--link2</a></h5>
+<h5> <a href="https://youtu.be/Gzb76I8qh2Y">--link3</a></h5>
+<h5> <a href="https://youtu.be/cweQO2gfh2s">--link4</a></h5>
+<h5> <a href="https://youtu.be/kEgjp-BUoHE">--link5</a></h5><br><br>
+
+<h3 id="Neutral">--Neutral--</h3> <br>
+{% elif data[1]=="Disgust" and  data[0]=="Movies" %}
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt6751668/?ref_=ttls_li_tt">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt5727208/?ref_=ttls_li_tt">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt8613070/?ref_=ttls_li_tt">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt8772262/?ref_=ttls_li_tt">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt7286456/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Disgust" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.free-ebooks.net/s/vR0kL">--link1</a></h5>
+<h5> <a href="https://www.free-ebooks.net/s/AWZx7">--link2</a></h5>
+<h5> <a href="https://www.free-ebooks.net/s/E1WPW">--link3</a></h5>
+<h5> <a href="https://www.free-ebooks.net/s/BOZy2">--link4</a></h5>
+<h5> <a href="https://www.free-ebooks.net/s/y7Nnz">--link5</a></h5><br>
+{% elif data[1]=="Disgust" and  data[0]=="Music" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/1uFv9Ts7Sdw">--link1</a></h5>
+<h5> <a href="https://youtu.be/Ndo8r_Hg_lg">--link2</a></h5>
+<h5> <a href="https://youtu.be/Qg3DxELVPj4">--link3</a></h5>
+<h5> <a href="https://youtu.be/rY2LUmLw_DQ">--link4</a></h5>
+<h5> <a href="https://www.youtube.com/watch?v=aJOTlE1K90k">--link5</a></h5><br><br>
+
+
+{% elif data[1]=="Surprise" and  data[0]=="Movies" %}
+<h3 id="Surprise">--Surprise--</h3> <br> 
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt0167404/?ref_=ttls_li_tt">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0114814/?ref_=ttls_li_tt">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0217869/?ref_=ttls_li_tt">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0217869/?ref_=ttls_li_tt">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0063442/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Surprise" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.amazon.in/Kargil-Surprise-Victory-General-Malik-ebook/dp/B00AAI3CYS">--link1</a></h5>
+<h5> <a href="https://www.amazon.in/Pearls-Lady-surprise-jewelry-Resistance-ebook/dp/B0777F38BT">--link2</a></h5>
+<h5> <a href="https://www.amazon.in/Double-Surprise-Shanaya-Taneja-ebook/dp/B081WTC3WG">--link3</a></h5>
+<h5> <a href="https://www.twinkl.co.in/resource/a-monster-surprise-ebook-t-or-2004">--link4</a></h5>
+<h5> <a href="https://www.amazon.in/Harrys-Birthday-Surprise-BFTV-LLC-ebook/dp/B00S67M0HU">--link5</a></h5><br>
+{% elif data[1]=="Surprise" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/TNRCvG9YtYI">--link1</a></h5>
+<h5> <a href="https://youtu.be/7lL1CW140FQ">--link2</a></h5>
+<h5> <a href="https://youtu.be/p1JPKLa-Ofc">--link3</a></h5>
+<h5> <a href="https://youtu.be/gQz71zgXYXA">--link4</a></h5>
+<h5> <a href="https://youtu.be/LF0rKW1DEMo">--link5</a></h5><br><br>
+{% elif data[1]=="Fear" and  data[0]=="Movies" %}
+<h3 id="Fear">--Fear--</h3><br>
+ <h5>MOVIES</h5>
+<h5> <a href="https://www.imdb.com/title/tt0081505/?ref_=ttls_li_tt">--link1</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0230600/?ref_=ttls_li_tt">--link2</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0365748/?ref_=ttls_li_tt">--link3</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0070047/?ref_=ttls_li_tt">--link4</a></h5>
+<h5> <a href="https://www.imdb.com/title/tt0884328/?ref_=ttls_li_tt">--link5</a></h5><br>
+{% elif data[1]=="Fear" and  data[0]=="Books" %}
+ <h4>BOOKS</h4>
+<h5> <a href="https://www.bookrix.com/_ebook-c-b-cooper-the-daughter/">--link1</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-michael-whitehouse-bedtime/">--link2</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-hima-vemula-the-boy-in-the-striped-pajamas/">--link3</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-michael-whitehouse-on-a-hill/">--link4</a></h5>
+<h5> <a href="https://www.bookrix.com/_ebook-t-d-jackson-bite/">--link5</a></h5><br>
+{% elif data[1]=="Fear" and  data[0]=="Songs" %}
+<h4>MUSIC</h4>
+<h5> <a href="https://youtu.be/F3WIHtOmkBg">--link1</a></h5>
+<h5> <a href="https://youtu.be/nspxAG12Cpc">--link2</a></h5>
+<h5> <a href="https://youtu.be/TZ827lkktYs">--link3</a></h5>
+<h5> <a href="https://youtu.be/sOnqjkJTMaA">--link4</a></h5>
+<h5> <a href="https://youtu.be/Ypkv0HeUvTc">--link5</a></h5><br><br>
+
+{%endif%}
+{% endblock %}
