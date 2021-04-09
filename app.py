@@ -48,6 +48,14 @@ def index():
     # Main page
     return render_template('index.html')
 
+@app.route('/recommend',methods=['GET','POST'])
+def go():
+    if request.method == 'POST':
+        data = request.form['x']
+        emotion = "Happy"
+        pred = [data, emotion]
+    return render_template("recommendation.html", data=pred)
+
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
