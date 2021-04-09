@@ -17,7 +17,7 @@
         </div>
       </div>
       <div>
-        <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+        <button type="button" class="btn btn-info  " id="btn-predict">Predict!</button>
       </div>
     </div>
     <div class="loader" style="display:none;"></div>
@@ -28,7 +28,7 @@
   </div>
   <form  method="post" action="{{url_for('go')}}" >
   <h6>
-<br><br>
+<br>
     <label for="select"><i>SELECT MEDIA:</i></label>
 
   <select id="select" name="x">
@@ -39,8 +39,8 @@
 
   <br><br>
     </h6>
-    <input type="submit"  class="btn btn-primary" value="recommend">
+    <input type="submit"  class="btn btn-primary" value="Recommend">
   </form>
-</div>
+
 </center><br><br>
 {% endblock %}

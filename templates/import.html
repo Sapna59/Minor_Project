@@ -13,34 +13,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #563d7c;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/" style="color: white;" ><h4>Home</h4> <span class="sr-only">(current)</span></a>
-      </li>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #563d7c;">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarText">
+  <ul class="navbar-nav mr-auto">
     <li class="nav-item active">
-         <a class="nav-item nav-link disabled" href="#" tabindex="-1" style="color: white;" aria-disabled="true"><h4>Recommend</h4></a>
-      </li>
-    </ul>
-    <span class="navbar-text" style="color: white;">
-        <h3>Expression based Recommendation system</h3>
-    </span>
-  </div>
+      <a class="nav-link" href="/" style="color: white;" ><h5>Home</h5> <span class="sr-only">(current)</span></a>
+    </li>
+  <li class="nav-item active">
+       <a class="nav-item nav-link disabled" href="#" tabindex="-1" style="color: white;" aria-disabled="true"><h5>Recommend</h5></a>
+    </li>
+  </ul>
+  <span class="navbar-text" style="color: white;">
+      <h3>Expression based Recommendation system</h3>
+  </span>
+</div>
 </nav>
     <div class="container">
         <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
     </div>
 </body>
 
-<nav class="navbar fixed-bottom navbar-light justify-content-center" style="background-color: #563d7c; color: white;">
-<ul class="navbar-nav">
-            <li> <b>Minor Project - 2021</b><br>
-    <b>Developed By <a href="https://fb.com/">Grp</a></b></li>
-        </ul>
-</nav>
+<footer>
+    <div class="foot" style="background-color: #563d7c; color: white; position:fixed; bottom:0px;">
+<h5><center>
+    <b>Minor Project - 2021</b><br>
+    <b>Developed By <a href="https://fb.com/">Grp</a></b>
+</center></h5>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+</footer>
 
 </html>
