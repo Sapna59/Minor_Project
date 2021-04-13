@@ -18,7 +18,7 @@ from werkzeug.utils import secure_filename
 # Define a flask app
 app = Flask(__name__)
 
-label_map = ['Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
+label_map = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 
 # Load your trained model
 #Reading the model from JSON file
@@ -52,8 +52,7 @@ def index():
 def go():
     if request.method == 'POST':
         data = request.form['x']
-        emotion = "Happy"
-        pred = [data, emotion]
+        pred = [data, label]
     return render_template("recommendation.html", data=pred)
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -66,7 +65,7 @@ def upload():
         basepath = os.path.dirname(__file__)
         file_path = os.path.join(basepath, 'uploads', secure_filename(f.filename))
         f.save(file_path)
-
+        global label
         # Make prediction
         preds = model_predict(file_path, model)
         # Simple argmax
